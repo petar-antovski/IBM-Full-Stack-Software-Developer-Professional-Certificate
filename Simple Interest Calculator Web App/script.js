@@ -7,11 +7,11 @@ function compute()
     var years = document.getElementById("years").value;
 
     //Check if principal field is empty or negative or zero
-    var principal_is_not_empty = document.getElementById("principal");
-    if(principal_is_not_empty.value == "" || principal_is_not_empty.value <= 0)
+    var check_principal_is_positive = document.getElementById("principal");
+    if(check_principal_is_positive.value <= 0)
     {
         alert("Enter a positive number");
-        principal_is_not_empty.focus();
+        check_principal_is_positive.focus();
         return false;
     }
     else
